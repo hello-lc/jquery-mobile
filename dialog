@@ -1,0 +1,28 @@
+<body>
+
+  <section id="pageone" data-role="page">
+    <div data-role="header">
+      <h1>页面一</h1>
+    </div>
+    <div data-role="content" class="content">
+      <p>在此处写入正文</p>
+      <a href="#pagetwo" data-rel="dialog">打开对话框</a>
+    </div>
+    <div data-role="footer">
+      <h1>页脚</h1>
+    </div>
+  </section>
+
+  <section id="pagetwo" data-role="page">
+    <header data-role="header">
+      <h1>对话框</h1>
+    </header>
+    <div class="content" data-role="content">
+      点击返回，回到上一个页面
+      <br/>
+      <a href="#pageone" data-role="button" data-theme="b" data-rel="back">返回</a>
+      <a href="#" data-role="button" data-theme="b" onClick="$('#pagetwo').dialog('close')">关闭</a>
+    </div>
+  </section>
+
+</body>
