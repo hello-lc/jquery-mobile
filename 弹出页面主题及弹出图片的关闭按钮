@@ -1,0 +1,6 @@
+一、弹出页面主题
+theme:弹出页面自身的主题；
+data-overlay-theme:弹出页面周边的背景颜色；
+
+二、关闭按钮
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
