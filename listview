@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.3.2.min.js"></script>
+<script>
+  
+</script>
+</head>
+<body>
+
+  <section id="page1" data-role="page">
+    <div data-role="header" data-fullscreen="true">
+      <h1>页眉工具栏</h1>
+    </div>
+    <div class="content" data-role="content">
+      <!-- 嵌套列表 -->
+      <ul data-role="listview">
+        <li>北京市
+          <ul>
+            <li>朝阳区</li>
+            <li>东城区</li>
+            <li>西城区</li>
+          </ul>
+        </li>
+        <li>天津市
+          <ul>
+            <li>河东区</li>
+            <li>和平区</li>
+            <li>南开区</li>
+          </ul>
+        </li>
+      </ul>
+      <div style="margin-top:15px;"></div>
+      <!-- 分类列表及过滤列表内容 -->
+      <ul data-role="listview" data-filter="true">
+        <li data-role="list-divider">大洋</li>
+        <li data-filtertext="刘备 玄德">太平洋</li>
+        <li>大西洋</li>
+        <li>印度洋</li>
+        <li data-role="list-divider">大陆</li>
+        <li>亚欧大陆</li>
+        <li>非洲大陆</li>
+        <li>美洲大陆</li>
+      </ul>
+      <div style="margin-top:15px;"></div>
+      <!-- 数字列表 -->
+      <ol data-role="listview">
+        <li>北京市</li>
+        <li>天津市</li>
+        <li>上海市</li>
+      </ol>
+      <div style="margin-top:15px;"></div>
+      <!-- 分立按钮列表 -->
+      <ul data-role="listview">
+        <li><a href="#">北京市</a><a href="#" data-icon="plus">更多</a></li>
+        <li><a href="#">天津市</a><a href="#" data-icon="plus">更多</a></li>
+        <li><a href="#">上海市</a><a href="#" data-icon="plus">更多</a></li>
+        <li><a href="#">重庆市</a><a href="#" data-icon="plus">更多</a></li>
+      </ul>
+      <div style="margin-top:15px;"></div>
+      <!-- 气泡提示 -->
+      <ul data-role="listview">
+        <li>
+          <a href="#">新品上架<span class="ui-li-count">new</span></a>
+          <ul>
+            <li>电器</li>
+            <li>数码</li>
+            <li>图书</li>
+            <li>家居</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">特价展卖<span class="ui-li-count">90</span></a>
+        </li>
+      </ul>
+      <!-- 插页列表 -->
+      <ul data-role="listview" data-inset="true">
+        <li>太平洋</li>
+        <li>大西洋</li>
+        <li>印度洋</li>
+        <li>北冰洋</li>
+      </ul>
+      <!-- 折叠列表及自动分类 -->
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+          <h2>华北省份</h2>
+          <ul data-role="listview">
+            <li>北京</li>
+            <li>河北</li>
+            <li>山东</li>
+          </ul>
+        </div>
+        <div data-role="collapsible">
+          <h2>华南省份</h2>
+          <ul data-role="listview" data-autodividers="true">
+            <li>广东</li>
+            <li>贵州</li>
+            <li>福建</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 使用列表美化表单布局 -->
+      <form>
+        <ul data-role="listview" data-inset="true">
+          <li data-role="fieldcontain">
+            <label for="name">登录名：</label>
+            <input type="text" name="name" id="name" value="">
+          </li>
+          <li data-role="fieldcontain">
+            <label for="password">密码：</label>
+            <input type="password" name="password" id="password" value="">
+          </li>
+          <li data-role="fieldcontain">
+            <fieldset class="ui-grid-a">
+              <div class="ui-block-a">
+                <button type="reset" data-theme="d">取消</button>
+              </div>
+              <div class="ui-block-b">
+                <button type="submit" data-theme="a">提交</button>
+              </div>
+            </fieldset>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div data-role="footer">
+      <h1>页脚</h1>
+    </div>
+  </section>
+
+</body>
+</html>
