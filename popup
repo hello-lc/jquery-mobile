@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.3.2.min.css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.3.2.min.js"></script>
+<script>
+  
+</script>
+</head>
+<body>
+  <section id="page1" data-role="page">
+    <header data-role="header">
+      <h1>弹出页面</h1>
+    </header>
+    <div class="content" data-role="content">
+      <!-- 提示框 -->
+      <a href="#popupTooltip" data-rel="popup" data-role="button" data-inline="true">提示框</a>
+
+      <div data-role="popup" id="popupTooltip">
+        <p>提示框可以加在移动应用中，用于提醒和指示用户进行后续操作。</p>
+      </div>
+      <!-- 菜单 -->
+      <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true">菜单与嵌套菜单</a>
+
+      <div data-role="popup" id="popupMenu" data-theme="a">
+        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+          <li data-role="divider" data-theme="a">地理分界</li>
+          <li><a href="#">亚洲</a></li>
+          <li><a href="#">非洲</a></li>
+          <li><a href="#">欧洲</a></li>
+          <li><a href="#">南美洲</a></li>
+          <li><a href="#">北美洲</a></li>
+          <li><a href="#">大洋洲</a></li>
+          <li><a href="#">南极洲</a></li>
+        </ul>
+      </div>
+      <!-- 嵌套菜单 -->
+      <a href="#popupNested" data-role="button" data-rel="popup" data-inline="true">级联菜单-地理分界</a>
+
+      <div data-role="popup" id="popupNested" data-theme="none">
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="c" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0;width:250px;">
+          <div data-role="collapsible" data-inset="false">
+            <h2>七大洲</h2>
+            <ul data-role="listview">
+              <li><a href="#">亚洲</a></li>
+              <li><a href="#">非洲</a></li>
+              <li><a href="#">欧洲</a></li>
+              <li><a href="#">南美洲</a></li>
+              <li><a href="#">北美洲</a></li>
+              <li><a href="#">大洋洲</a></li>
+              <li><a href="#">南极洲</a></li>
+            </ul>
+          </div>
+          <div data-role="collapsible" data-inset="false">
+            <h2>六大洲</h2>
+            <ul data-role="listview">
+              <li><a href="#">亚欧大陆</a></li>
+              <li><a href="#">非洲</a></li>
+              <li><a href="#">南美洲</a></li>
+              <li><a href="#">北美洲</a></li>
+              <li><a href="#">大洋洲</a></li>
+              <li><a href="#">南极洲</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 弹出表单 -->
+      <a href="#popupForm" data-role="button" data-rel="popup" data-inline="true">弹出表单</a>
+      
+      <div id="popupForm" data-role="popup" data-theme="b" class="ui-corner-all">
+        <form action="">
+          <div style="padding:10px 20px">
+            <input type="text" name="name" id="name" value="" placeholder="姓名">
+            <input type="password" name="password" id="password" value="" placeholder="密码">
+            <div style="margin-top:20px;">
+              <fieldset class="ui-grid-a" data-mini="true">
+                <div class="ui-block-a">
+                  <button type="reset" data-theme="d">取消</button>
+                </div>
+                <div class="ui-block-b">
+                  <button type="submit" data-theme="a">提交</button>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
